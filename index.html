@@ -68,7 +68,8 @@
   </head>
   <!-- body starts here-->
 <body>
-  <header class="header bg-white">
+  <main class="navbar ">
+  <header class="header bg-white" style="position: sticky; top:0; ">
     <!-- Navigation menu -->
     <div class="flex justify-center py-2.5">
         <div class=" my-auto ">
@@ -79,7 +80,7 @@
   </header>
   
   <!-- navigation bar--> 
-  <nav class="header-bg">
+  <nav class="header-bg" >
     <div class="mx-auto px-4">
       <div class="flex justify-between">
         <div class="flex tracking-widest py-3 md:py-6 md:text-2xl text-xl">
@@ -91,7 +92,7 @@
      </div>
 
                 <!-- desktop menu bar-->
-                <div class="hidden md:flex items-center md:justify-center pl-32 mx-auto lg:w-full lg:pl-48 space-x-1 md:text-2xl">
+                <div class="hidden md:flex items-center md:justify-center pl-32 mx-auto lg:w-full lg:pl-48 space-x-1 md:text-2xl text-center">
                     <a href="solace-chambers-buk.com.ng" class="py-4 px-2 text-white font-semibold hover:text-gray-300">Home</a>
                     <a href="#our-executives" class="py-4 px-2 text-white font-semibold hover:text-gray-300 our-executives" >Our Executives </a>
                     <a href="#membership-application" class="py-4 px-2 text-white font-semibold hover:text-gray-300 our-membership">Membership Application </a>
@@ -120,7 +121,10 @@
             <a href="#contact" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
         </div>
   </nav>
- 
+  </main>
+ <div class="conte">
+   
+ </div>
   
   <!-- header ends here-->
   <!-- image background and introduction-->
@@ -139,7 +143,7 @@
 
 <!-- Who we are--> 
  <section class="py-12 px-4 bg-white">
-   <h2 class="text-center uppercase font-bold text-2xl md:text-5xl mb-1"> who we are</h2>
+   <h2 class="text-center uppercase font-bold text-2xl md:text-5xl mb-1" id="who-we-are"> who we are</h2>
    <div class="h-full mx-auto w-48 my-2.5 md:my-6">
      <img src="https://i.ibb.co/0KZ3qqn/istockphoto-656514904-612x612.jpg" alt="istockphoto-656514904-612x612" border="2px #fff solid" style="border-radius:100%; ">
    </div>
@@ -294,7 +298,7 @@
         <!-- Deputy Director of Operations -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active"   >
           <div class="max-h-100"> 
-            <img src="https://i.ibb.co/TW9HLH6/IMG-20230713-WA0014-removebg-preview-removebg-preview.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt=""  >
+            <img src="https://i.ibb.co/YtKLwD5/IMG-20230713-WA0018-removebg-preview-removebg-preview.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt=""  >
             </div>
             <div class="overlay absolute top-0 left-0 w-full h-full text-white bottom-0 left-0 pt-32 md:pt-10 px-4 " >
            <div class="bg-gray-900 opacity-80 mt-24 px-1 md:mx-10" > 
@@ -418,7 +422,7 @@
    </div>
    <!-- Google form registration--> 
    <div class="mx-auto flex items-center justify-center mt-10 blink-2">
-     <button style="font-size: 16" class="shadow-lg py-2 px-2 bg-yellow-500 bg-gradient-to-br from-yellow-600 to-yellow-400   font-bold rounded-sm text-white text-lg md:text-2xl "> <a href="https://forms.gle/WwB2aetBgJdMN2Qh9"> Complete Your Registration Here! <!--<i class="fas fa-arrow-right"></i>--> </a></button>
+     <button style="font-size: 16" class="shadow-lg py-2 px-2 bg-yellow-500 bg-gradient-to-br from-yellow-600 to-yellow-400   font-bold rounded-sm text-white text-lg md:text-2xl "> <a href="https://forms.gle/Cd3Yb4sjnBDUUC2T9"> Complete Your Registration Here! <!--<i class="fas fa-arrow-right"></i>--> </a></button>
    </div>
  </section>    
    
@@ -533,22 +537,76 @@
 </section>
 </main>
   <!-- Footer -->
-  <section class="header-bg pt-10">
-      <h2 class="text-white text-center text-xl md:text-3xl font-bold uppercase"> FOLLOW US ON</h2>
-          <!-- social handles--> 
-    <div class="mt-3 md:mt-20 flex justify-center text-3xl md:px-64 md:text-6xl tracking-widest">
-      <a href="https://www.facebook.com/profile.php?id=100092506571508" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook" class="px-6"> <i class="fab fa-facebook px-4"></i></a>
-        <a href="https://www.instagram.com/solace_chambers_buk/" class="text-white hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram px-4"></i></a>
-        <a href="https://www.linkedin.com/company/solace-chambers-bayero-university-kano/" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin px-4"></i></a>
+  <footer class="header-bg py-14 px-3">
+    <article class="md:grid grid-cols-3 grid-span-2">
+      <div class="">
+        <h2 class="text-white text-xl md:text-4xl font-bold mb-2.5 "> About Us </h2>
+        <hr class="bg-gray-400 h-1 font-bold w-9 "> 
+        <p class="text-sm md:text-2xl font-light text-white tracking-tight mt-8 text-justify"> Solace Chambers is a student-based Chambers domicile in Faculty of Law, Bayero University, Kano (BUK) committed towards equipping student members with the skills of legal research, legal writing, moot court advocacy, career development, among others.   </p>
+          <!-- social handles-->
+          <div class="mt-9 md:mt-8 text-4xl md:text-5xl tracking-widest">
+            <a href="https://www.facebook.com/profile.php?id=100092506571508" class="text-white hover:text-blue-600" target="_blank" rel="noopener" title="Facebook" class="pr-4"> <i class="fab fa-facebook "></i></a>
+          <a href="https://www.instagram.com/solace_chambers_buk/" class="text-white hover:text-pink-600 pr-4" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+          <a href="https://www.linkedin.com/company/solace-chambers-bayero-university-kano/" class="text-white hover:text-blue-600 pr-4" target="_blank" rel="noopener" title="LinkedIn"> <i class="fab fa-linkedin "></i></a>
      </div>
-    </div>
+     </div>
+     
+     <!-- quick links-->
+     <div class="mt-12 md:mt-0 md:pl-8">
+     <h2 class="text-white text-xl md:text-4xl font-bold mb-2.5 "> Quick Links </h2>
+        <hr class="bg-gray-400 h-1 font-bold w-9 ">
+        <div class="md: leading-20">
+        <a href="" class="block text-sm md:text-2xl text-white mt-5 font-light"> Home</a>
+        <a href="#who-we-are" class="block text-sm md:text-2xl text-white mt-5 font-light"> Who we are </a>
+        <a href="#publications" class="block text-sm md:text-3xl text-white mt-5 font-light"> Publications </a>
+        <a href="" class="block text-sm md:text-2xl text-white mt-5 font-light"> News & Updates </a>
+        <a href="#contact" class="block text-sm md:text-2xl text-white mt-5 font-light"> Contact </a>
+     </div>
+     </div>
+ 
+    <!--</div>-->
+     <!-- Get in touch-->
+     <div class="mt-12 md:mt-0  text-white">
+     <h2 class="text-white text-xl md:text-4xl font-bold mb-2.5 "> Get in Touch </h2>
+        <hr class="bg-gray-400 h-1 font-bold w-9 ">
+        <!-- address-->
+        <div class="text-sm md:text-2xl flex mt-5">
+          <div class=""> <i class="fas fa-location text-white text-3xl "> </i></div>
+          <div class="">
+            <h5 class="pl-5 font-bold"> Address: </h5>
+            <p class="pl-5 font-light"> Faculty of Law, Bayero University, Kano</p>
+          </div>
+         </div>
+        <!-- phone Number-->
+        <div class="text-sm md:text-2xl flex mt-5">
+          <div class=""> <i class="fas fa-phone text-white text-3xl "> </i></div>
+          <div class="">
+            <h5 class="pl-5 font-bold"> Phone Number: </h5>
+            <tel class="pl-5 font-light"> (+234) 9037073761</tel>
+          </div>
+         </div>
+        <!-- phone Number-->
+        <div class="text-sm md:text-2xl flex mt-5">
+          <div class=""> <i class="fas fa-envelope text-white text-3xl "> </i></div>
+          <div class="">
+            <h5 class="pl-5 font-bold"> Email: </h5>
+            <p class="pl-5 font-light"> solacebuklaw@gmail.com </p>
+          </div>
+         </div>
+     
+     </div>
+     </div>
+    
+    
+    </article>
     <!-- horizontal line--> 
  <div class="px-8 my-14"> 
- <hr style="background-color: " class="bg-gray-100 font-light "> 
+ <hr style="background-color: " class="bg-gray-800 font-light "> 
  </div> 
  
+ 
      <!-- newsletter --> 
-    <div class="px-4">
+   <!-- <div class="px-4">
       <h4 class="uppercase text-white text-center text-base md:text-3xl mt-5 font-bold"> sign up for our newsletter</h4>
       <p class="mt-1 text-sm md:text-2xl text-center font-light text-white">Stay up to date with our Weekly Legal Bit, Legal Maxims and "Did you Know" Series </p>
     </div>
@@ -559,15 +617,16 @@
       <div class="flex items-center justify-center"> 
       <button type="submit" class="inline-block bg-yellow-500 bg-gradient-to-br from-yellow-600 to-yellow-400 text-white font-semibold px-4 py-2 rounded mt-5 text-sm md:text-3xl uppercase flex justify-center items-center"> Subscribe &nbsp;  <i class="far fa-paper-plane"> </i> </button>
       </div>
-    </form>
+    </form>-->
     <!-- copyright--> 
-    <div class="mt-10 md:mt-20 bg-white py-3 px-2 md:px-5">
-      <p class="text-sm font-normal text-center md:text-3xl"> <i class="far fa-copyright md:text-3xl "></i> 2023 Solace Chambers, BUK | All Rights Reserved. <br> Designed by <a href="muhibqosim.com.ng" class=" text-blue-700"> Muhibqosim </a>
-      </p>
+    <div class="mt-10 md:mt-20 text-gray-400 text-center px-2 md:px-5 text-sm md:text-2xl font-normal">
+      <p class=" text-center"> Solace Chambers, BUK <i class="far fa-copyright  "></i> 2023 </p>
+      <p class=""> All Rights Reserved</p>
+      <p class=""> Designed by <a href="muhibqosim.com.ng" class=" text-white font-light"> Muhibqosim </a> </p>
     </div>
 
     
-  </section>
+  </footer>
   
   
   <!--js starts here--> 
