@@ -12,7 +12,7 @@ function myFunction(x) {
         } 
         
   //JS TYPEWRITER
-const text = "We are Feasible but Invincible "; // The text to be displayed
+const text = "We are Visible but Invincible "; // The text to be displayed
 const speed = 100; // The speed of the typewriter effect in milliseconds
 
 const typewriterText = document.getElementById("typewriter-text");
