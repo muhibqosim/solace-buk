@@ -80,13 +80,20 @@
   text-align: center;
 }
     
-    .reachout-section {
+ .reachout-section {
       background: url('https://i.ibb.co/d6MT4n7/IMG-20230327-WA0022-1.jpg') center/cover no-repeat;
       padding: 80px 20px;
       color: white;
       text-align: center;
     }
     
+      /* .programs-detail-section {
+      background: url('https://i.ibb.co/d6MT4n7/IMG-20230327-WA0022-1.jpg') center/cover no-repeat;
+      padding: 80px 20px;
+      color: white;
+      text-align: center;
+      height: 50vh;
+    }*/
     
     
     

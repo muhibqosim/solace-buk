@@ -146,76 +146,23 @@
                 </div>-->
                 <div
                     class="text-4xl garamond md:text-8xl animate__animated animate__fadeIn animate__slow animate__delay-1s tracking-tight">
-                    <span class="block leading-none font-semibold "> About Us </span> 
-                  <p class="text-sm md:text-2xl italic mt-3 tracking-wide"> Get to know what Solace Chambers is made of.</p>
-                    
-                    </div>
-        
+                    <span class="block leading-none font-semibold ">Programs & Initiatives</span>
+                </div>
+          <div class="hidden mt-3 " id="typed-strings">
+            <h2 class="text-9xl">Virtual Mentorship & Webinar </h2>
+            <h2 class="text-9xl">Weekly Advocacy Classes</h2>
+            <h2 class="text-9xl">Mock Trial Competition</h2>
+            <h2 class="text-9xl"> All-Female Moot Competition</h2>
+            <h2 class="text-9xl"> Quiz and Debate Competition </h2>
+            <h2 class="text-9xl"> Mediation and Arbitration Competition</h2>
+            <h2 class="text-9xl"> Workshop and Seminar </h2>
+
+          </div>
+          <span class="text-shadow text-lg text-white md:text-5xl " id="typed" style=" "></span>
   </div>
 </section>
 
     <!-- Program intro -->
-<section class="bg-white ">
-    <!-- TABLE -->
-    <div class="mb-4 px-1 pt-2.5 md:pt-6 pb-5  border-gray-200 ">
-      <ul class="flex flex-wrap text-sm font-normal justify-center text-center text-white " id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-        <li class="cursor-pointer inline-block hover:bg-red-700 hover:text-white bg-yellow-600 text-center text-sm text-white py-2 md:text-3xl px-3 font-bold border-r-2 border-white" role="presentation"><a class=" text-white hover:text-white " id="all-tab" data-tabs-target="#who-we-are" type="button" role="tab" aria-controls="who-we-are" aria-selected="false"> Who we are </a> </li>
-        <li class="text-sm md:text-3xl font-bold hover:bg-red-700 hover:text-white bg-yellow-600 text-center text-sm text-white py-2 md:text-3xl px-3 font-bold border-r-2 border-white" role="presentation"> <a class="cursor-pointer inline-block hover:text-white " id="publications-tab" data-tabs-target="#directorates" type="button" role="tab" aria-controls="directorates" aria-selected="false"> Directorates </a></li>
-        <li class="mr-2 text-sm md:text-3xl font-bold hover:bg-red-700 hover:text-white bg-yellow-600 text-center text-sm text-white py-2 md:text-3xl px-3 font-bold" role="presentation"><a class="cursor-pointer inline-block hover:text-white  " id="legal-opinions-tab" data-tabs-target="#staff-advisers" type="button" role="tab" aria-controls="staff-advisers" aria-selected="false"> Staff Advisers</a></li>
-      </ul>
-    </div>
-
-<div id="myTabContent">
-<!-- WHO WE ARE-->
-<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="who-we-are" role="tabpanel" aria-labelledby="all-tab">
- <div class="py-8 bg-gray-100">
-   <h3 class="text-center uppercase font-bold text-2xl md:text-5xl mb-1"> WHO WE ARE</h3>
-   <p class="text-sm md:text-4xl px-2"> the court house of the Court to hold the above is to see the house of cards I am very sorry for</p>
- </div>
-    
-  
-  </div>
-<!-- Directorates & Standing Committees -->
-<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="directorates" role="tabpanel" aria-labelledby="publications-tab">
-   <div class="py-8 bg-gray-100">
-     <h3 class="text-center uppercase font-bold text-2xl md:text-5xl mb-1"> OUR DIRECTORATES</h3>
-     <p class="text-sm md:text-4xl px-2"> the court house of the Court to hold the above is to see the house of cards I am very sorry for</p>
-   </div>
- 
- 
-   
-   
-</div>
-
-<!-- Staff Advisers-->
-<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="staff-advisers" role="tabpanel" aria-labelledby="legal-opinions-tab">
-   <p class="mt-4 max-w-3xl text-3xl tx-lg text-gray-700 md:mx-auto md:text-center mb-4 garamond"> STAFF ADVISERS</p>
-
-     
-</div> 
-<!--islamic publications--> 
-<div class="hidden p-4 rounded-lg bg-gray-200 dark:bg-gray-800" id="islamic-publications" role="tabpanel" aria-labelledby="islamic-publications-tab">
- <p class="mt-4 max-w-3xl text-3xl md:text-4xl tx-lg text-gray-700 mb-4 garamond md:uppercase">Islamic Law Publications—</p>
-
-
-</div>
-
-</div>
-</section>
-  
- 
- 
- 
- 
- 
- 
-
- 
-  <p class="text-6xl md:text-9xl text-center px-2 text-gray-800"> - - - - - </p>
-
-
-
-
 
     <!-- Footer -->
     <footer class="header-bg py-14 px-3">
@@ -326,12 +273,20 @@
         once: true
       }, );
 
-
+//typed string for programs
+ /* type js for who i am */
+ var typed = new Typed('#typed', {
+   stringsElement: '#typed-strings',
+   loop: true,
+   backDelay: 900,
+   backSpeed: 30,
+   smartBackspace: true,
+   typeSpeed: 40,
+   startDelay: 2000,
+ });
 
 
     </script>
 </body>
 
 </html>
-
-
