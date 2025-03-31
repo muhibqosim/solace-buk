@@ -85,6 +85,8 @@
       padding: ;
       color: white;
       text-align: center;
+      background-color: darkred;
+      opacity: 0.9;
     }
     
       /* .programs-detail-section {
