@@ -131,7 +131,6 @@ typeWriter();*/
 
 
 
-
       //copyright
       document.addEventListener('DOMContentLoaded', function() {
         var currentYear = new Date().getFullYear();
