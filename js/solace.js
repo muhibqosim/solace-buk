@@ -128,7 +128,73 @@ typeWriter();*/
   });
 
 
+/*gallery starts here*/
 
+let galleryImages = [];
+let galleryCurrentIndex = 0; // Renamed to avoid conflict
+
+// Fetch images from API
+function fetchImages() {
+    const url = "https://galleria.sgm.ng/wJQfKcds8vhhSPeU8";
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (Array.isArray(data)) {
+                galleryImages = data.filter(img => img && img.trim() !== ""); // Remove empty images
+                updateGallery();
+            } else {
+                console.error("Invalid data format:", data);
+            }
+        })
+        .catch(error => console.error("Error fetching images:", error));
+}
+
+// Update the slider with new images
+function updateGallery() {
+    const slider = document.getElementById("gallery-slider"); 
+    slider.innerHTML = ""; 
+
+    galleryImages.forEach((imageUrl, index) => {
+        let img = document.createElement("img");
+        img.src = imageUrl;
+        img.alt = "Gallery Image";
+        img.className = "w-full h-64 object-cover flex-shrink-0";
+        img.style.display = index === 0 ? "block" : "none";
+        slider.appendChild(img);
+    });
+}
+
+// Move to the next slide
+function nextSlide() {
+    let slides = document.querySelectorAll("#gallery-slider img"); 
+    if (slides.length === 0) return;
+
+    slides[galleryCurrentIndex].style.display = "none";
+    galleryCurrentIndex = (galleryCurrentIndex + 1) % slides.length;
+    slides[galleryCurrentIndex].style.display = "block";
+}
+
+// Move to the previous slide
+function prevSlide() {
+    let slides = document.querySelectorAll("#gallery-slider img"); 
+    if (slides.length === 0) return;
+
+    slides[galleryCurrentIndex].style.display = "none";
+    galleryCurrentIndex = (galleryCurrentIndex - 1 + slides.length) % slides.length;
+    slides[galleryCurrentIndex].style.display = "block";
+}
+
+// Auto-slide every 3 seconds
+setInterval(nextSlide, 3000);
+
+// Auto-refresh images every 60 seconds
+setInterval(fetchImages, 60000);
+
+// Fetch images on page load
+document.addEventListener("DOMContentLoaded", fetchImages);
+
+/*gallery ends here*/
 
 
       //copyright
